@@ -7,10 +7,10 @@ describe('tour-of-heroes App', () => {
     page = new TourOfHeroesPage();
   });
 
-  it('should display welcome message', done => {
+  it(`should display 'Tour of Heroes'`, done => {
     page.navigateTo();
     page.getParagraphText()
-      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(msg => expect(msg).toEqual('Tour of Heroes'))
       .then(done, done.fail);
   });
 });
